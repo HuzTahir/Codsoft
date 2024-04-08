@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <span>Syed Huzaifa Tahir Zaidi</span>
+        <div class="buttons">
+            <button>
+                <a href="#home">Home</a>
+            </button>
+            <button>
+                <a href="#About">About</a>
+            </button>
+            <button>
+                <a href="#Work">Work</a>
+            </button>
+            <button>
+                <a href="#Contact">Contact</a>
+            </button>
+            <!-- <button>
+                <span>Home</span>
+            </button>  -->
+        </div>
+        <div id="contactme" class="item contactme">
+            <!-- <span>Contact Me:</span> -->
+            <img src="data:image/png;base64,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"
+                alt=""><a href=""></a>
+            <!-- <p>huztahir@gmail.com</p> -->
+            <a href="https://www.linkedin.com/in/syed-huzaifa-tahir-zaidi-19aa21263/">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAe7X///8AcbDi6/MAd7N9rM4Ac7G70eStyN/I2ukAebQAdbI5j79Unsjo8vjM4u7Y6fIfiLy00uWew9sHfrZvqs52qc3T5O+ly+FvpMpopcuMudcUg7qny+Hg7/ZDlMKAtNTw9/u92eljoMiTuNWBttWUwNukw9s5k8K61+jZwmoZAAAEoUlEQVR4nO2dbVvbIBSGgTJUSGjStNtsrX1x69b//weXtNMaDVR30YOePfcXP5RcF7e8JhxAyEeqpqynggV12VRPXuLv30mhnM6ds2Rop4pJz9CXxubOVWKsKf3JcCz4FN8JLcaPhmPFrQCPWDU+GnrBU7BVFP5gWHKsokd02RlOTO58XBA1aQ0LrnW0wxZSVCp3Li6KqkTjcmfiorhGMO5nOnQp6tx5uDC1YDLZBgAAAAAAAAAAAAAAAADAf43VRrUYx3SJ1Ro9b8YjX00WhWK4BmnN3fIprkrez/gFHLmd7FGteMU72GO0UY81p3gAa6tXgqwUrXtdgh1zNhEBZjEoKDd3XLqb6bCgZBNdZb6HDCWPQrR2EzRsWBSifggKSs+iO3051verae7cpUBtI4Ylh4aoRhHDrxyGxKjhFw6G5lvEkMW0xiwjhizijd06Yqg5GNoiLLhlMeILNfTqxKgZtpOaeUiQx5RGRAqRSRG2hRhoiXserbDDDdbTikM/+oiZDQhOORkKU25eVlFuG+DctPem7+d82uATRuzuj3qb7Vxx6UX7OHW3ur19KDRTvwNaa2uZNUAAwEfgsLQdoN+pukjKF6vG1radlnPmiOs6MEKlPub6JszDc0X3I5JycVK01hlRr+Y/d8ur9perSbOYlYU1uc7pePu3NnMVSXn9OAlqTcrd2L9K4G8WqzzxAWkNtSqWm2Aiv5tmCBBIaWhNMbzYemJfk894Uxrq5oxfR0N98EpCQ32uAI/4grY5JjO0JvzR7gUz0pqazNBMIj+/YEGpmMpQlW8XlPInoWIywzfX0QMlXVtMZbh6l6CUNdnAmMjw1zta4YExWZBnKsPNOw3lmqqeJjKMRQMMs6F63Uhk+A/siPrTfIYbovXXfIZyTTNBzWhY0VTTjIZyRVKIOQ1p+pqchhXJkJjTkGbqltVwRtEQsxpOKKppVkOS8SKrIUlYWV7D3wQNMa8hxStUckO/XTZNs9zfvyXxkqAhpjWs1nW3R7NbdVJ3X89/P90ShM6lNPRz87zrcKo8V5AUwYEJDV8flK71uc83n6qWDh6UrmJB1pJkR0cyQz8YCGfPfEcliCRPZjgb7vhjUdaSZM9KKsP7UIsy0c9wBHtWUhkuQmO3ji5oEAz5qQzDr3rTzb/8Yz6c4SY8sKnYrpzdpzEchwe2yCZVKb9/GsPInmEX2El97rkPZngdMfwSeY5gQ8DlDXXMkGDqndlwzN7wG/taSnDhSGbDEQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMKwj7kZBfG3z7druV/hlKMf4V129taHn7sh2CYbO0e4vx8tdo5wbBuhjTzH8Px+AAAAAAAAAAAAAAAAAAAAAAAA4ESdOwMXphYl46vfRXcqsWiy3LlLhmsEwVGLOVGVoDjlPB+2kILiZN58mH1rKBn3Nd3p562hF1zrqRX+YDh8DQMDrOouPekMB67S4IAWh1tdDobSl+yK0ZrSy5OhlJNCOT4FqZ0q9n/NxFP0bdWUXOaoddmcbjr5A5XhWJeQSJXvAAAAAElFTkSuQmCC"
+                    alt=""></a>
+            <!-- <a href="https://www.linkedin.com/in/syed-huzaifa-tahir-zaidi-19aa21263/">Syed Huzaifa Tahir
+                Zaidi</a> -->
+            <a href="https://www.facebook.com/profile.php?id=100004495247369">
+                <img src="data:image/png;base64,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"
+                    alt=""></a>
+            <!-- <a href="https://www.facebook.com/profile.php?id=100004495247369">Huzaifa Tahir</a>
+                <a href="https://www.instagram.com/syed_huzaifa_tahir/?next=%2F"> -->
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+            <!-- </a><a href="https://www.instagram.com/syed_huzaifa_tahir/?next=%2F">syed_huzaifa_tahir</a> -->
+        </div>
+    </nav>
+
+    <main>
+        <div id="home" class="introduction">
+            <div class="text">
+                <p>Hello, I'm Huzaifa</p>
+                <p>Web Developer</p>
+                <p>Based in Pakistan</p>
+                <button><a href="https://drive.google.com/file/d/1NjTB__ecyago2GXVjuUVcz9sYBrG9HxH/view?usp=sharing"
+                        target="_blank" download="Syed Huzaifa Tahir-Resume.pdf">Resume</a></button>
+            </div>
+            <img src="profile-pic (1).png" alt="">
+        </div>
+        <div id="About" class="aboutme">
+            <span class="color span">about me.</span>
+            <p>I am a student majoring in Computer Sciene. Currently I am enrolled in Northern Virginia Community
+                College for my Associates degree and plan to transfer in Fall 2024 to a university to complete my
+                Bachelors degree. Below is my education journey as well as my results: </p>
+            <div class="education">
+                <ul>
+                    <li>
+                        <span>2019-2020</span>
+                        <ul class="ul">
+                            <li><h4>FFC Grammar School and College Goth Macchi, Pakistan</h></li>
+                            <li>Cambridge Assesment International Examination Ordinary Levels</li>
+                            <li>Physics: A*, Computer science: A, Mathematics: A*, Chemistry, A*, English: A*, Pakistan Studies: A*,
+                                Islamiat: A, Urdu: B</li>
+                            <li>Cambridge International High Acheivers Award ~ O-Levels</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>2020-2022</span>
+                        <ul class="ul">
+                            <li><h4>FFC Grammar School and College Goth Macchi, Pakistan</h4></li>
+                            <li>Cambridge Assesment International Examination Advanced Levels</li>
+                            <li>Physics: A*, Computer science: A, Mathematics: A</li>
+                            <li>Cambridge International High Acheivers Award ~ A-Levels</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>2022-2023</span>
+                        <ul class="ul">
+                            <li><h4>National University of Computer and Emerging Sciences (NUCES), Islamabad, Pakistan</h4></li>
+                            <li> Bachelors of Science(BS) in Computer Science</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>2023-2024</span>
+                        <ul class="ul">
+                            <li><h4>Northern Virginia Community College(NVCC), Woodbridge, Virginia, USA</h4></li>
+                            <li>Associates of Science(AS) in Computer Science</li>
+                            <li>Cumulative Grade Point Average(CGPA): 4.0</li>
+                            <li>Deans List of Honors Fall 2023</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Work" class="work">
+            <span class="color span">work.</span>
+            <div class="internships">
+                <span style="font-weight:bold;">Internships</span>
+                <ul> <h4>Codsoft</h4>
+                    <p>March 2024 - April 2024</p>
+                    <li>Selected for a highly competitive virtual internship position with CodSoft, a leading software development company.</li>
+                    <li>Engaged in a comprehensive 4-week internship focused on web development.</li>
+                    <li>Gained hands-on experience in various aspects of web development, including front-end and back-end technologies.</li>
+                    <li>Actively participated in learning sessions and workshops aimed at enhancing technical skills and knowledge.</li>
+                    <li>Executed assigned tasks with diligence and precision, ensuring timely completion of projects.</li>
+                    <li>Collaborated effectively with team members to achieve project objectives and deliver high-quality solutions.</li>
+                    <li>Demonstrated adaptability and willingness to learn, successfully applying new concepts and techniques in practical projects.</li>
+                    <li>Received positive feedback from supervisors for demonstrating a strong work ethic and commitment to excellence.</li>
+                    <li>Leveraged internship experience to enhance understanding of web development principles and methodologies.</li>
+                    <li>Contributed to the achievement of company goals by delivering innovative solutions and contributing ideas during team discussions.</li>
+                </ul>
+            </div>
+
+            <div class="display projects">
+                <div class="items">
+                    <p>Projects</p>
+                    <span>Tetris Game in C++</span>
+                    <ul>
+                        <li>Developed a complete C++ game using SFML, implementing Object-Oriented Programming for
+                            efficient
+                            code organization and scalability.</li>
+                        <li>Created multiple game levels and scoring systems, integrating text file storage for player
+                            high
+                            scores, demonstrating strong memory management skills.</li>
+                        <li>Successfully completed the university-assigned project within a tight two-week timeframe,
+                            showcasing efficient problem-solving and time management abilities.</li>
+                    </ul>
+                    <a href="https://github.com/HuzTahir/Tetris-game-c-">My Project</a>
+                </div>
+                
+                <div class="items">
+                    <span>Space Shooter Game in C++</span>
+                    <ul>
+                        <li>Programmed a complete C++ game using SFML, implementing fundamental programming concepts
+                            like
+                            arrays, global and local functions, variables, and control structures, delivering it within
+                            a
+                            tight two-week deadline.</li>
+                        <li>Optimized gameplay with various levels and scoring techniques, utilizing text files to
+                            record
+                            and maintain player's highest scores.</li>
+                        <li>Standardized coding practices to ensure efficient and error-free game development as part of
+                            a
+                            university-assigned project.</li>
+                    </ul>
+                    <a href="https://github.com/HuzTahir/Space-shooter-game">My Project</a>
+                </div>
+                <div class="items">
+                    <span>Atari Dodge'em Game in C++</span>
+                    <ul>
+                        <li>Programmed a complete C++ game using SFML, implementing fundamental programming concepts
+                            like
+                            arrays, global and local functions, variables, and control structures, delivering it within
+                            a
+                            tight two-week deadline.</li>
+                        <li>Optimized gameplay with various levels and scoring techniques, utilizing text files to
+                            record
+                            and maintain player's highest scores.</li>
+                        <li>Standardized coding practices to ensure efficient and error-free game development as part of
+                            a
+                            university-assigned project.</li>
+                    </ul>
+                    <a href="https://github.com/HuzTahir/Atari-Dodge-em-game-C-">My Project</a>
+                </div>
+                <div class="items">
+                    <span>Spotify Clone using HTML, CSS and JavaScript</span>
+                    <p>
+                        Built with HTML, CSS, and JavaScript, this project replicates the core functionalities of
+                        Spotify without any backend or frontend frameworks. </p>
+                    <ul> <span>Features</span>
+                        <li>Playlist Management: Add and remove playlists</li>
+                        <li>Playback Controls: Play, pause, skip to next/previous track</li>
+                        <li>Playlist Looping: Auto-restart when reaching the end</li>
+                        <li>Track Navigation: Slider for precise navigation</li>
+                        <li>Volume Control: Adjust volume seamlessly</li>
+                        <li>Library Access: Instantly play selected songs</li>
+                        <li>Responsiveness: Optimized for various devices</li>
+                        <li>Hamburger Menu: Easy access to the library</li>
+                    </ul>
+                    <a href="https://github.com/HuzTahir/SpotifyClone">My Project</a>
+                </div>
+            </div>
+        </div>
+        <div id="Contact" class="contact">
+            <span class="color span">contact me.</span>
+            <div class="contactinfo">
+                <img src="https://cdn.dribbble.com/users/1798258/screenshots/6058627/media/7fb557caebccae95a226334820147e7d.png?resize=400x0" alt="">
+                <ul>
+                    <span>Feel free to contact me on any of the platforms mentioned below.</span>
+                    <li>Email: <a href="mailto:huztahir@gmail.com">huztahir@gmail.com</a></li>
+                    <li>linkedin: <a href="https://www.linkedin.com/in/syed-huzaifa-tahir-zaidi-19aa21263/">Syed Huzaifa Tahir Zaidi</a></li>
+                    <li>Github: <a href="https://github.com/HuzTahir"> HuzTahir</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>Copyright &copy; Syed Huzaifa Tahir</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
