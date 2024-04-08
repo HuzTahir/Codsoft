@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    background-color: #CFB284;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+h4
+{
+    width: 50vw;
+}
+h2
+{
+    font-size: 300%;
+    color: #FFFDE7;
+    font-weight: bolder;
+}
+img
+{
+    width: 50vw;
+    height: 50vh;
+}
+
+.data
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #DFCAA0;
+    padding: 34px;
+    width: 50vw;
+    height: 70vh;
+}
